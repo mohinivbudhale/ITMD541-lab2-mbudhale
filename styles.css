@@ -1,5 +1,6 @@
 /* Flexbox Part 1 */
 
+#flex-section1 ul {
 #flex-section1 nav {
   display: flex;
   justify-content: space-between;
@@ -11,19 +12,38 @@
   color: #333;
   margin: 0 10px;
 }
+}
 
 /* end Flexbox Part 1 */
 
 
 /* Flexbox Part 2 */
 
+
 #flex-section2 ul {
   display: flex;
-  justify-content: space-between;
 }
 
+
 #flex-section2 li {
+
   flex: 1;
+
+}
+
+#flex-section2 .item1 {
+order: 1;
+
+}
+
+#flex-section2 .item2 {
+order: 3;
+
+}
+
+#flex-section2 .item3 {
+order: 2;
+
 }
 
 
@@ -31,27 +51,24 @@
 
 
 /* Flexbox Part 3 */
-
 #flex-section3 .box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
 }
+
 
 #flex-section3 .tags ul {
-  display: flex;
+display: flex;
   flex-wrap: wrap;
-}
-
-#flex-section3 .tags .tag {
   background-color: #333;
   color: #fff;
   margin: 5px;
   padding: 5px 10px;
   border-radius: 5px;
+
 }
+
 
 /* end Flexbox Part 3 */
 
@@ -62,12 +79,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-}
 
-#grid-section1 .grid-item {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
 }
 
 /* end Grid Part 1 */
@@ -75,16 +87,17 @@
 
 /* Grid Part 2 */
 
-#grid-section2 .blue-box {
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 2;
+#grid-section2 .gridboxblue {
+  grid-column: 1 / span 2;
+  grid-row: 1;
   background-color: blue;
 }
 
-#grid-section2 .red-box {
-  grid-column: 3;
+#grid-section2 .gridboxred {
+grid-column: 2 / span 2;
   grid-row: 2;
   background-color: red;
+
 }
 
 /* end Grid Part 2 */
@@ -93,16 +106,38 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-  display: grid;
+display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 100px 300px 100px;
   grid-gap: 10px;
 }
 
-#grid-section3 .box {
-  background-color: #333;
+#grid-section3 .box1 {
+background-color: #333;
   color: #fff;
   padding: 10px;
+
+}
+
+#grid-section3 .box2 {
+background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+}
+
+#grid-section3 .box3 {
+background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+}
+
+#grid-section3 .box4 {
+background-color: #333;
+  color: #fff;
+  padding: 10px;
+
 }
 
 /* end Grid Part 3 */
@@ -111,17 +146,20 @@
 /* Transition Part */
 
 #transition-section .box a {
-  display: inline-block;
+	display: inline-block;
   background-color: #ccc;
   color: #000;
   padding: 20px;
   text-decoration: none;
   transition: background-color 0.5s, color 0.5s; 
+
+
 }
 
 #transition-section .box a:hover {
-  background-color: #cc0000;
-  color: #fff;
-  transition-duration: 0.3s; 
+	background-color: #cc0000;
+  	color: #fff;
+  	transition-duration: 0.5s;
+}
 
 /* end Transition Part */
